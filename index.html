@@ -26,9 +26,10 @@
             <img
               class="card__picture"
               src="./images/van-desktop.png"
+              loading="lazy"
               alt="Пиксельный фургончик"
             />
-            <label class="card__label">&lt;/HTML&gt;</label>
+            <span class="card__label">&lt;/HTML&gt;</span>
           </div>
           <div class="card__content">
             <p class="card__text">
@@ -86,9 +87,10 @@
             <img
               class="card__picture filter-less-saturate"
               src="./images/van-mobile.png"
+              loading="lazy"
               alt="Пиксельный фургончик менее цветастый"
             />
-            <label class="card__label">&lt;/HTML&gt;</label>
+            <span class="card__label">&lt;/HTML&gt;<span>
           </div>
           <div class="card__content">
             <p class="card__text">
@@ -148,9 +150,10 @@
             <img
               class="card__picture filter-over-saturate"
               src="./images/van-mobile.png"
+              loading="lazy"
               alt="Пиксельный фургончик с перенассыщенными цветами"
             />
-            <label class="card__label">&lt;css&gt;</label>
+            <span class="card__label">&lt;css&gt;<span>
           </div>
           <div class="card__content">
             <p class="card__text">
@@ -208,9 +211,10 @@
             <img
               class="card__picture filter-hue-rotate"
               src="./images/van-mobile.png"
+              loading="lazy"
               alt="Пиксельный фургончик с другой цветовой гаммой"
             />
-            <label class="card__label">&lt;desigions&gt;</label>
+            <span class="card__label">&lt;desigions&gt;<span>
           </div>
           <div class="card__content">
             <p class="card__text">
@@ -270,9 +274,10 @@
             <img
               class="card__picture filter-invert"
               src="./images/van-mobile.png"
+              loading="lazy"
               alt="Пиксельный фургончик в зелёных тонах"
             />
-            <label class="card__label">care</label>
+            <span class="card__label">care<span>
           </div>
           <div class="card__content">
             <p class="card__text">
@@ -333,9 +338,10 @@
             <img
               class="card__picture filter-sepia"
               src="./images/van-mobile.png"
+              loading="lazy"
               alt="Пиксельный фургончик выцвевели цвета"
             />
-            <label class="card__label">&lt;support&gt;</label>
+            <span class="card__label">&lt;support&gt;<span>
           </div>
           <div class="card__content">
             <p class="card__text">
@@ -393,9 +399,10 @@
             <img
               class="card__picture filter-blur"
               src="./images/van-mobile.png"
+              loading="lazy"
               alt="Пиксельный фургончик размытый"
             />
-            <label class="card__label">&lt;lifes-style: none;&gt;</label>
+            <span class="card__label">&lt;lifes-style: none;&gt;<span>
           </div>
           <div class="card__content">
             <p class="card__text">
@@ -455,9 +462,10 @@
             <img
               class="card__picture filter-complex"
               src="./images/van-mobile.png"
+              loading="lazy"
               alt="Пиксельный фургончик с множеством цветными фильтрами"
             />
-            <label class="card__label">&lt;experience&gt;</label>
+            <span class="card__label">&lt;experience&gt;<span>
           </div>
           <div class="card__content">
             <p class="card__text">
@@ -513,36 +521,36 @@
             </button>
           </div>
         </li>
+        <li class="last-card">
+          <button
+            type="button"
+            onclick="window['save-on-floppy'].showModal();"
+            aria-controls="save-on-floppy"
+            class="button last-card__save-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+              <use href="./svg/floppyDisk.svg#save-icon"></use>
+            </svg>
+            <span class="button__text">Сохранить на память</span>
+          </button>
+          <dialog id="save-on-floppy" class="popup">
+            <div class="popup__content">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+                <use href="./svg/floppyDisk.svg#save-icon"></use>
+              </svg>
+              <p class="popup__text">Вставьте дискету, чтобы продолжить</p>
+            </div>
+            <button
+              type="button"
+              onclick="window['save-on-floppy'].close();"
+              aria-controls="save-on-floppy"
+              class="button popup__ok-button"
+            >
+              <span class="button__text">ок</span>
+            </button>
+          </dialog>
+        </li>
       </ul>
     </main>
-    <footer class="footer">
-      <button
-        type="button"
-        onclick="window['save-on-floppy'].showModal();"
-        aria-controls="save-on-floppy"
-        class="button footer__save-button">
-        <svg class="floppy-icon" viewBox="0 0 39 39">
-          <use href="./svg/floppyDisk.svg#save-icon"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-      <dialog id="save-on-floppy" class="popup">
-        <div class="popup__content">
-          <svg class="floppy-icon" viewBox="0 0 39 39">
-            <use href="./svg/floppyDisk.svg#save-icon"></use>
-          </svg>
-          <p class="popup__text">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <button
-          type="button"
-          onclick="window['save-on-floppy'].close();"
-          aria-controls="save-on-floppy"
-          class="button popup__ok-button"
-        >
-          <span class="button__text">ок</span>
-        </button>
-      </dialog>
-    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
