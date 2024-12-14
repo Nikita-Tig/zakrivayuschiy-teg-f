@@ -232,8 +232,8 @@
 }
 
 .button:focus {
-  outline: none;
   box-shadow: none;
+  outline: none;
 }
 
 .button:focus-visible {
